@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>DACSS — Build Status &amp; Open Questions</title>
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  /* status-page-only tweaks */
+  .status-body { max-width: 820px; }
+  .status-body ol, .status-body ul { padding-left: 22px; }
+  .status-body li { margin: 6px 0; }
+  .pill { display:inline-block; font-size:.72rem; font-weight:700; letter-spacing:.04em;
+          text-transform:uppercase; padding:2px 8px; border-radius:999px; vertical-align:middle; }
+  .pill-done { background:#e3f1e6; color:#1d6b2e; }
+  .pill-ask  { background:#fdf0e0; color:#8a5a12; }
+  .pill-open { background:#f2e9f8; color:#5e2e86; }
+  .meta { color: var(--ink-soft); font-size:.85rem; }
+  .backlink { display:inline-block; margin-top:8px; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <h1>DACSS — Build Status</h1>
+    <p class="subtitle">Internal notes for Albert &amp; Margie — not linked from the patient site</p>
+    <p class="version">Updated 2026-08-23 · <a class="backlink" href="index.html" style="color:#fff;text-decoration:underline;">&larr; back to the DACSS tool</a></p>
+  </div>
+</header>
+
+<main class="wrap status-body">
+
+  <section class="card">
+    <h2><span class="pill pill-done">Implemented</span> Albert's requests — all done</h2>
+    <ul>
+      <li><strong>Dashboard starts all-N</strong>, not blank. Percentages are <strong>percent of total (92)</strong>.</li>
+      <li><strong>Name-or-codename in one field</strong>, patient's choice, with the <em>redbikedog</em> example and the 12-letter guidance.</li>
+      <li><strong>New fields:</strong> date completed (auto-fills once they start marking), sex at birth, age in years and months.</li>
+      <li><strong>Instructions</strong> updated with the exact "higher-than-expected rate… / statistically significant… studies available from Albert@DonnayDetox.com" wording.</li>
+      <li><strong>End buttons:</strong> (A) Print B&amp;W with dashboard on top, (B) Save as color PDF, (C) Clear answers.</li>
+      <li><strong>Share tip:</strong> "save as PDF first, then attach to email," shown above the buttons.</li>
+      <li><strong>Privacy:</strong> browser-only storage, a shared-computer caution, and Clear answers wipes the device.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2><span class="pill pill-ask">Please confirm</span> Assumptions made where you hadn't answered</h2>
+    <ol>
+      <li><strong>"Load with age" (Current − Past):</strong> kept the definition and label, but added a one-line note that it doesn't include "Always." Open question from before — you can still tell me to fold Always in.</li>
+      <li><strong>Impact ratings (0–3):</strong> left out for now — only the first 3 columns appear, per the simplicity goal. Easy to add if you want them.</li>
+      <li><strong>Buttons A vs B:</strong> both open the browser's print window (a browser can't silently write a file to disk without it). "Save as PDF" is a destination there. A renders B&amp;W, B renders color. If you want button B to download a PDF directly with no dialog, that needs a bundled PDF library — say the word.</li>
+      <li><strong>Whole-number percentages.</strong> Since everything defaults to N, there's never a divide-by-zero, so no "—" placeholder was needed.</li>
+      <li><strong>Radio buttons</strong> (not a dropdown) for N/P/A/C, and date auto-fills the moment they mark their first item (you can edit it).</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2><span class="pill pill-open">Outstanding</span> Needs you or a decision</h2>
+    <ul>
+      <li><strong>Where it's hosted</strong> — GitHub account/org, and any custom domain.</li>
+      <li><strong>Impact 0–3</strong> — include or leave out (default: out).</li>
+      <li><strong>"Load with age"</strong> — keep as-is or include Always.</li>
+      <li><strong>How the clinician receives it</strong> — the save-PDF-then-email flow is in; confirm that's the whole path.</li>
+      <li><strong>Button B behavior</strong> — print-dialog (current) vs. direct download.</li>
+      <li><strong>BAACSS</strong> — its dashboard logic (the broken formulas, the % of tested vs % of total rule you described) is the next build, and still needs the calculation spec I offered to draft.</li>
+    </ul>
+  </section>
+
+  <p class="meta">This page is hidden: it carries a <code>noindex</code> tag and is not linked from the patient-facing site. Share the URL only with people who should see build notes.</p>
+
+</main>
+</body>
+</html>

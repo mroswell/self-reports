@@ -1,0 +1,238 @@
+/* ===== DACSS website — screen + print styles =====
+   Design goals: calm, clinical, high-contrast, keyboard-friendly, print-clean.
+   System fonts only (no external requests). No color-only meaning. */
+
+:root {
+  --ink:      #14202b;
+  --ink-soft: #45586a;
+  --line:     #d3dce4;
+  --bg:       #f4f7f9;
+  --card:     #ffffff;
+  --accent:   #1f6f8b;   /* muted teal */
+  --accent-d: #164f63;
+  /* status hues — always paired with the letter + label, never color alone */
+  --c-N: #6b7b88;
+  --c-P: #a86b1f;
+  --c-A: #7a3ea8;
+  --c-C: #b2334a;
+  --danger: #a62a2a;
+  --radius: 10px;
+  --focus: #0b6ea8;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.55;
+  font-size: 17px;
+}
+
+.wrap { max-width: 940px; margin: 0 auto; padding: 0 20px; }
+.wrap-h { max-width: 940px; margin: 28px auto 8px; padding: 0 20px; }
+
+a { color: var(--accent-d); }
+
+/* ---- Header ---- */
+.site-header {
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-d) 100%);
+  color: #fff;
+  padding: 22px 0 20px;
+}
+.site-header h1 { margin: 0; font-size: 2rem; letter-spacing: .04em; }
+.site-header .subtitle { margin: 2px 0 0; font-size: 1.05rem; opacity: .95; }
+.site-header .version { margin: 6px 0 0; font-size: .8rem; opacity: .8; }
+
+/* ---- Cards ---- */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin: 22px auto;
+  max-width: 940px;
+}
+main.wrap { padding-bottom: 40px; }
+
+h2 { font-size: 1.35rem; margin: 0 0 12px; color: var(--ink); }
+h3 { font-size: 1.05rem; margin: 18px 0 6px; }
+
+/* ---- Instructions ---- */
+.instructions ul.legend { list-style: none; padding: 0; margin: 10px 0; }
+.instructions ul.legend li { margin: 6px 0; display: flex; align-items: baseline; gap: 10px; }
+.note { background: #eef5f7; border-left: 4px solid var(--accent); padding: 10px 14px; border-radius: 6px; }
+.privacy { margin-top: 14px; }
+.privacy summary { cursor: pointer; font-weight: 600; color: var(--accent-d); }
+.privacy p { color: var(--ink-soft); }
+
+/* status code chip */
+.code {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 26px; height: 26px; border-radius: 6px;
+  font-weight: 700; color: #fff; flex: none; font-size: .9rem;
+}
+.code-N { background: var(--c-N); }
+.code-P { background: var(--c-P); }
+.code-A { background: var(--c-A); }
+.code-C { background: var(--c-C); }
+
+/* ---- Patient fields ---- */
+.fields { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.field { display: flex; flex-direction: column; }
+.field-wide { grid-column: 1 / -1; }
+.field-narrow { grid-column: span 1; }
+label { font-weight: 600; margin-bottom: 4px; }
+input, select {
+  font: inherit; padding: 10px 12px; border: 1px solid var(--line);
+  border-radius: 8px; background: #fff; color: var(--ink); min-height: 44px;
+}
+input:focus, select:focus, button:focus, summary:focus, [tabindex]:focus {
+  outline: 3px solid var(--focus); outline-offset: 2px;
+}
+.hint { font-size: .85rem; color: var(--ink-soft); margin: 4px 0 0; }
+
+/* ---- Dashboard ---- */
+.dashboard { border-color: #b9d0d8; }
+.dash-progress { font-weight: 600; color: var(--accent-d); margin: 0 0 14px; }
+.kpis { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.kpi {
+  background: #f7fafb; border: 1px solid var(--line); border-radius: 8px;
+  padding: 12px 8px; text-align: center;
+}
+.kpi-num { display: block; font-size: 1.6rem; font-weight: 700; color: var(--accent-d); }
+.kpi-label { display: block; font-size: .78rem; color: var(--ink-soft); margin-top: 2px; }
+.kpi-trend { background: #f3eef8; }
+.dash-foot { font-size: .82rem; color: var(--ink-soft); margin: 12px 0 4px; }
+.trend-note { display: block; margin-top: 4px; }
+
+.dash-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: .95rem; }
+.dash-table th, .dash-table td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--line); }
+.dash-table th[scope="col"]:not(:first-child), .dash-table td:not(:first-child) { text-align: right; }
+.dash-table thead th { color: var(--ink-soft); font-size: .82rem; text-transform: uppercase; letter-spacing: .03em; }
+
+/* ---- Checklist ---- */
+.cat { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+       margin: 0 auto 18px; max-width: 940px; overflow: hidden; }
+.cat > h3 { margin: 0; padding: 14px 20px; background: #eef3f6; border-bottom: 1px solid var(--line);
+            font-size: 1.05rem; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.cat-count { font-size: .8rem; color: var(--ink-soft); font-weight: 500; }
+
+.disorder {
+  display: grid; grid-template-columns: 1fr auto; gap: 12px 18px;
+  align-items: center; padding: 12px 20px; border-bottom: 1px solid #eef2f5;
+}
+.disorder:last-child { border-bottom: none; }
+.disorder.is-marked { background: #fbfaf5; }
+.disorder .name { margin: 0; }
+.disorder .markers { font-size: .78rem; color: var(--ink-soft); }
+
+/* radio group */
+.opts { display: flex; gap: 6px; }
+.opts label {
+  position: relative; margin: 0; font-weight: 600;
+}
+.opts input { position: absolute; opacity: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+.opts .opt {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 44px; min-height: 44px; padding: 0 6px; border: 2px solid var(--line);
+  border-radius: 8px; background: #fff; cursor: pointer; user-select: none;
+  transition: background .12s, border-color .12s;
+}
+.opts input:hover + .opt { border-color: var(--accent); }
+.opts input:focus-visible + .opt { outline: 3px solid var(--focus); outline-offset: 2px; }
+.opts input:checked + .opt { color: #fff; border-color: transparent; }
+.opts input[value="N"]:checked + .opt { background: var(--c-N); }
+.opts input[value="P"]:checked + .opt { background: var(--c-P); }
+.opts input[value="A"]:checked + .opt { background: var(--c-A); }
+.opts input[value="C"]:checked + .opt { background: var(--c-C); }
+
+/* ---- Actions ---- */
+.actions .share-tip { background: #eef5f7; border-left: 4px solid var(--accent); padding: 10px 14px; border-radius: 6px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 12px; margin: 14px 0 6px; }
+.btn {
+  font: inherit; font-weight: 600; padding: 12px 18px; min-height: 48px;
+  border: 2px solid var(--accent-d); border-radius: 8px; background: #fff;
+  color: var(--accent-d); cursor: pointer;
+}
+.btn:hover { background: #eef5f7; }
+.btn-primary { background: var(--accent-d); color: #fff; }
+.btn-primary:hover { background: var(--accent); }
+.btn-danger { border-color: var(--danger); color: var(--danger); }
+.btn-danger:hover { background: #fbecec; }
+
+/* ---- Footer ---- */
+.site-footer { color: var(--ink-soft); font-size: .82rem; padding: 20px 0 40px; }
+
+/* ---- Utility ---- */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 720px) {
+  body { font-size: 16px; }
+  .fields { grid-template-columns: 1fr 1fr; }
+  .field-narrow { grid-column: span 1; }
+  .kpis { grid-template-columns: repeat(3, 1fr); }
+  .disorder { grid-template-columns: 1fr; }
+  .opts { justify-content: flex-start; }
+  .dash-table { font-size: .85rem; }
+  .dash-table th, .dash-table td { padding: 6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* =====================================================================
+   PRINT — dashboard on top, checklist below, clean B&W by default.
+   Color mode adds hue back when body has .print-color.
+   ===================================================================== */
+@media print {
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .no-print, .site-footer.no-print, .actions { display: none !important; }
+  .site-header { background: none !important; color: #000; padding: 0 0 6px; border-bottom: 2px solid #000; }
+  .site-header .version { opacity: 1; }
+  .wrap, .card, .cat, .wrap-h { max-width: none; margin: 8px 0; padding: 0; border: none; }
+  .card { border: 1px solid #999; padding: 10px 12px; border-radius: 0; }
+  .instructions, .privacy { display: none; }  /* keep the clinical report tight */
+
+  /* order: header, patient info, dashboard, checklist (dashboard above checklist already) */
+  .kpis { grid-template-columns: repeat(6, 1fr); }
+  .kpi { border: 1px solid #999; background: #fff !important; }
+  .kpi-num, .dash-progress, h2, h3, a { color: #000 !important; }
+  .dash-table th, .dash-table td { border-bottom: 1px solid #999; }
+
+  .cat { border: 1px solid #999; page-break-inside: avoid; margin-bottom: 8px; }
+  .cat > h3 { background: #eee !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .disorder { padding: 4px 10px; }
+  .disorder.is-marked { background: #fff; }
+
+  /* Show the chosen code as a printed letter next to each disorder */
+  .opts { gap: 3px; }
+  .opts .opt { min-width: 20px; min-height: 20px; border: 1px solid #bbb; color: #000 !important; background: #fff !important; }
+  .opts input:checked + .opt { border: 2px solid #000; font-weight: 800; }
+
+  a[href^="mailto:"]::after { content: ""; }
+}
+
+/* B&W print: strip status colors so it prints clean on mono printers */
+@media print {
+  body:not(.print-color) .code,
+  body:not(.print-color) .opts input:checked + .opt { background: #fff !important; color: #000 !important; border: 2px solid #000; }
+  body:not(.print-color) .kpi-trend { background: #fff !important; }
+}
+
+/* Color print: keep the hues */
+@media print {
+  body.print-color .opts input[value="N"]:checked + .opt { background: var(--c-N) !important; color:#fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body.print-color .opts input[value="P"]:checked + .opt { background: var(--c-P) !important; color:#fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body.print-color .opts input[value="A"]:checked + .opt { background: var(--c-A) !important; color:#fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body.print-color .opts input[value="C"]:checked + .opt { background: var(--c-C) !important; color:#fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

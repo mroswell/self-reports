@@ -1,0 +1,790 @@
+{
+  "report": "DACSS",
+  "version": "v26.08.23",
+  "categories": [
+    {
+      "id": "affective",
+      "name": "Affective / Behavior / Mood / Psychiatric / Psychological",
+      "items": [
+        {
+          "id": "dacss-affective-01",
+          "sourceRow": 18,
+          "displayIndex": "1.1",
+          "name": "Alcohol Abuse Disorder",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-affective-02",
+          "sourceRow": 19,
+          "displayIndex": "1.2",
+          "name": "Anxiety",
+          "centralSensitization": true,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-affective-03",
+          "sourceRow": 20,
+          "displayIndex": "1.3",
+          "name": "Attention Deficit Hyperactivity Disorder ADHD",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-affective-04",
+          "sourceRow": 21,
+          "displayIndex": "1.4",
+          "name": "Bipolar Disorder aka Manic Depression",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-affective-05",
+          "sourceRow": 22,
+          "displayIndex": "1.5",
+          "name": "Major Depression or Depressive Disorder",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-affective-06",
+          "sourceRow": 23,
+          "displayIndex": "1.6",
+          "name": "Panic Attacks",
+          "centralSensitization": true,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-affective-07",
+          "sourceRow": 24,
+          "displayIndex": "1.7",
+          "name": "Post Traumatic Stress DIsorder",
+          "centralSensitization": true,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-affective-08",
+          "sourceRow": 25,
+          "displayIndex": "1.8",
+          "name": "Schizophrenia",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-affective-09",
+          "sourceRow": 26,
+          "displayIndex": "1.9",
+          "name": "Seasonal Affective DIsorder",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-affective-10",
+          "sourceRow": 27,
+          "displayIndex": "1.1",
+          "name": "Somatization or Somatoform Disorder, aka Bodily Stress Disorder",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-affective-11",
+          "sourceRow": 28,
+          "displayIndex": "1.11",
+          "name": "Survivor of physical, sexual, or emotional abuse before illness began (not just trauma but abuse)",
+          "centralSensitization": false,
+          "coPoisoning": false
+        }
+      ]
+    },
+    {
+      "id": "autoimmune",
+      "name": "Autoimmune, Infectious, or Post-Infectious",
+      "items": [
+        {
+          "id": "dacss-autoimmune-01",
+          "sourceRow": 35,
+          "displayIndex": "2.1",
+          "name": "Acute COVID, any variant",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-autoimmune-02",
+          "sourceRow": 36,
+          "displayIndex": "2.2",
+          "name": "Celiac Disease",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-autoimmune-03",
+          "sourceRow": 37,
+          "displayIndex": "2.3",
+          "name": "Chronic Fatigue Syndrome/ME",
+          "centralSensitization": true,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-autoimmune-04",
+          "sourceRow": 38,
+          "displayIndex": "2.4",
+          "name": "Eczema / Atopic Dermatitis",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-autoimmune-05",
+          "sourceRow": 39,
+          "displayIndex": "2.5",
+          "name": "Encephalitis, autoimmune or allergic",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-autoimmune-06",
+          "sourceRow": 40,
+          "displayIndex": "2.6",
+          "name": "Hashimoto’s Disease",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-autoimmune-07",
+          "sourceRow": 41,
+          "displayIndex": "2.7",
+          "name": "Histamine Intolerance",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-autoimmune-08",
+          "sourceRow": 42,
+          "displayIndex": "2.8",
+          "name": "Long COVID Syndrome (and other post infection syndromes)",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-autoimmune-09",
+          "sourceRow": 43,
+          "displayIndex": "2.9",
+          "name": "Lyme Disease, chronic",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-autoimmune-10",
+          "sourceRow": 44,
+          "displayIndex": "2.1",
+          "name": "Mast Cell Activation Syndrome",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-autoimmune-11",
+          "sourceRow": 45,
+          "displayIndex": "2.11",
+          "name": "Mastocytosis",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-autoimmune-12",
+          "sourceRow": 46,
+          "displayIndex": "2.12",
+          "name": "Raynaud’s Disease or Phenomenon",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-autoimmune-13",
+          "sourceRow": 47,
+          "displayIndex": "2.13",
+          "name": "Sjögren’s Syndrome",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-autoimmune-14",
+          "sourceRow": 48,
+          "displayIndex": "2.14",
+          "name": "Systemic Lupus Erythematosus",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-autoimmune-15",
+          "sourceRow": 49,
+          "displayIndex": "2.15",
+          "name": "Systemic Sclerosis/Scleroderma",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-autoimmune-16",
+          "sourceRow": 50,
+          "displayIndex": "2.16",
+          "name": "Systemic Vasculitis aka Behçet Disease",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-autoimmune-17",
+          "sourceRow": 51,
+          "displayIndex": "2.17",
+          "name": "Thyroiditis, autoimmune",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-autoimmune-18",
+          "sourceRow": 52,
+          "displayIndex": "2.18",
+          "name": "Urticaria (rashes), chronic",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-autoimmune-19",
+          "sourceRow": 53,
+          "displayIndex": "2.19",
+          "name": "Vasculitis of small vessels",
+          "centralSensitization": false,
+          "coPoisoning": true
+        }
+      ]
+    },
+    {
+      "id": "endocrine",
+      "name": "Endocrine / Metabolic",
+      "items": [
+        {
+          "id": "dacss-endocrine-01",
+          "sourceRow": 61,
+          "displayIndex": "3.1",
+          "name": "Addison's Disease / Adrenal Insufficiency Syndrome",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-endocrine-02",
+          "sourceRow": 62,
+          "displayIndex": "3.2",
+          "name": "Anemia from Beta Thalessmia",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-endocrine-03",
+          "sourceRow": 63,
+          "displayIndex": "3.3",
+          "name": "Anemia from Iron Deficiency",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-endocrine-04",
+          "sourceRow": 64,
+          "displayIndex": "3.4",
+          "name": "Diabetes",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-endocrine-05",
+          "sourceRow": 65,
+          "displayIndex": "3.5",
+          "name": "Hyperthyroidism / Graves Disease",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-endocrine-06",
+          "sourceRow": 66,
+          "displayIndex": "3.6",
+          "name": "Hypothyroidism",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-endocrine-07",
+          "sourceRow": 67,
+          "displayIndex": "3.7",
+          "name": "Metabolic Syndrome",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-endocrine-08",
+          "sourceRow": 68,
+          "displayIndex": "3.8",
+          "name": "Perimenopause through Menopause Transition",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-endocrine-09",
+          "sourceRow": 69,
+          "displayIndex": "3.9",
+          "name": "Premenstrual Dysphoric Disorder (PMDD, more severe than PMS)",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-endocrine-10",
+          "sourceRow": 70,
+          "displayIndex": "3.1",
+          "name": "Porphyria, genetic (any type of inherited)",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-endocrine-11",
+          "sourceRow": 71,
+          "displayIndex": "3.11",
+          "name": "Porphyrinopathies (acquired, not genetic)",
+          "centralSensitization": false,
+          "coPoisoning": false
+        }
+      ]
+    },
+    {
+      "id": "gastrointestinal",
+      "name": "Gastrointestinal",
+      "items": [
+        {
+          "id": "dacss-gastrointestinal-01",
+          "sourceRow": 79,
+          "displayIndex": "4.1",
+          "name": "Crohn's Disease (a type of inflammatory bowel disease)",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-gastrointestinal-02",
+          "sourceRow": 80,
+          "displayIndex": "4.2",
+          "name": "Eosinophilic Esophagitis",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-gastrointestinal-03",
+          "sourceRow": 81,
+          "displayIndex": "4.3",
+          "name": "Food Intolerances or Sensitivities",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-gastrointestinal-04",
+          "sourceRow": 82,
+          "displayIndex": "4.4",
+          "name": "Gastroesophageal Reflux Disease aka GERD",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-gastrointestinal-05",
+          "sourceRow": 83,
+          "displayIndex": "4.5",
+          "name": "Irritable Bowel Syndrome (different from inflammatory bowel diseases)",
+          "centralSensitization": true,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-gastrointestinal-06",
+          "sourceRow": 84,
+          "displayIndex": "4.6",
+          "name": "Ulcerative Colitis (type of inflammatory bowel disease)",
+          "centralSensitization": false,
+          "coPoisoning": false
+        }
+      ]
+    },
+    {
+      "id": "musculoskeletal",
+      "name": "Musculoskeletal and Pelvic",
+      "items": [
+        {
+          "id": "dacss-musculoskeletal-01",
+          "sourceRow": 91,
+          "displayIndex": "5.1",
+          "name": "Ehlers‑Danlos Syndrome",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-musculoskeletal-02",
+          "sourceRow": 92,
+          "displayIndex": "5.2",
+          "name": "Endometriosis",
+          "centralSensitization": true,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-musculoskeletal-03",
+          "sourceRow": 93,
+          "displayIndex": "5.3",
+          "name": "Interstitial Cystitis / Bladder Pain Syndrome",
+          "centralSensitization": true,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-musculoskeletal-04",
+          "sourceRow": 94,
+          "displayIndex": "5.4",
+          "name": "Mitral Valve Prolapse",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-musculoskeletal-05",
+          "sourceRow": 95,
+          "displayIndex": "5.5",
+          "name": "Myasthenia Gravis",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-musculoskeletal-06",
+          "sourceRow": 96,
+          "displayIndex": "5.6",
+          "name": "Rheumatoid Arthritis",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-musculoskeletal-07",
+          "sourceRow": 97,
+          "displayIndex": "5.7",
+          "name": "Temporomandibular (joint) Disorders",
+          "centralSensitization": true,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-musculoskeletal-08",
+          "sourceRow": 98,
+          "displayIndex": "5.8",
+          "name": "Whiplash",
+          "centralSensitization": false,
+          "coPoisoning": false
+        }
+      ]
+    },
+    {
+      "id": "neurological",
+      "name": "Neurological",
+      "items": [
+        {
+          "id": "dacss-neurological-01",
+          "sourceRow": 105,
+          "displayIndex": "6.1",
+          "name": "Alzheimer's Disease",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-neurological-02",
+          "sourceRow": 106,
+          "displayIndex": "6.2",
+          "name": "Autism Spectrum DIsorder",
+          "centralSensitization": true,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-neurological-03",
+          "sourceRow": 107,
+          "displayIndex": "6.3",
+          "name": "Brain Tumor",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-neurological-04",
+          "sourceRow": 108,
+          "displayIndex": "6.4",
+          "name": "Complex Regional Pain Syndrome and other chronic pain syndromes",
+          "centralSensitization": true,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-neurological-05",
+          "sourceRow": 109,
+          "displayIndex": "6.5",
+          "name": "Dysautonomia",
+          "centralSensitization": true,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-neurological-06",
+          "sourceRow": 110,
+          "displayIndex": "6.6",
+          "name": "Fibromyalgia",
+          "centralSensitization": true,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-neurological-07",
+          "sourceRow": 111,
+          "displayIndex": "6.7",
+          "name": "Hyperacusis / Misophonia",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-neurological-08",
+          "sourceRow": 112,
+          "displayIndex": "6.8",
+          "name": "Migraine",
+          "centralSensitization": true,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-neurological-09",
+          "sourceRow": 113,
+          "displayIndex": "6.9",
+          "name": "Multiple Sclerosis",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-neurological-10",
+          "sourceRow": 114,
+          "displayIndex": "6.1",
+          "name": "Parkinson's Disease",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-neurological-11",
+          "sourceRow": 115,
+          "displayIndex": "6.11",
+          "name": "Peripheral Neuropathy of any kind, eg Small Fiber Neuropathy",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-neurological-12",
+          "sourceRow": 116,
+          "displayIndex": "6.12",
+          "name": "Postural Orthostatic Tachycardia Syndrome",
+          "centralSensitization": true,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-neurological-13",
+          "sourceRow": 117,
+          "displayIndex": "6.13",
+          "name": "Restless Legs Syndrome",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-neurological-14",
+          "sourceRow": 118,
+          "displayIndex": "6.14",
+          "name": "Sensory Processing Disorders that include odor sensitivity by any name (such as Multi-Sensory Sensitivity, aka MUSES Syndrome, the only known cause of which is hangover after CO poisoning)",
+          "centralSensitization": true,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-neurological-15",
+          "sourceRow": 119,
+          "displayIndex": "6.15",
+          "name": "Stroke",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-neurological-16",
+          "sourceRow": 120,
+          "displayIndex": "6.16",
+          "name": "Temporal Lobe Epilepsy",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-neurological-17",
+          "sourceRow": 121,
+          "displayIndex": "6.17",
+          "name": "Tourette's Syndrome (tic disorder)",
+          "centralSensitization": true,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-neurological-18",
+          "sourceRow": 122,
+          "displayIndex": "6.18",
+          "name": "Traumatic Brain Injury",
+          "centralSensitization": false,
+          "coPoisoning": false
+        }
+      ]
+    },
+    {
+      "id": "respiratory",
+      "name": "Respiratory or ENT",
+      "items": [
+        {
+          "id": "dacss-respiratory-01",
+          "sourceRow": 130,
+          "displayIndex": "7.1",
+          "name": "Rhinitis, Allergic",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-respiratory-02",
+          "sourceRow": 131,
+          "displayIndex": "7.2",
+          "name": "Asthma",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-respiratory-03",
+          "sourceRow": 132,
+          "displayIndex": "7.3",
+          "name": "Chronic Obstructive Pulmonary Disease (COPD)",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-respiratory-04",
+          "sourceRow": 133,
+          "displayIndex": "7.4",
+          "name": "Reactive Airways Dysfunction Syndrome, aka RADS",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-respiratory-05",
+          "sourceRow": 134,
+          "displayIndex": "7.5",
+          "name": "Rhinitis, Vasomotor, chronic, aka RUDS",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-respiratory-06",
+          "sourceRow": 135,
+          "displayIndex": "7.6",
+          "name": "Sinusitis, chronic",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-respiratory-07",
+          "sourceRow": 136,
+          "displayIndex": "7.7",
+          "name": "Tinnitus, chronic",
+          "centralSensitization": true,
+          "coPoisoning": true
+        }
+      ]
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic Exposure (External or Internal)",
+      "items": [
+        {
+          "id": "dacss-toxic-01",
+          "sourceRow": 145,
+          "displayIndex": "8.1",
+          "name": "Arsenic Poisoning",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-toxic-02",
+          "sourceRow": 146,
+          "displayIndex": "8.2",
+          "name": "Carbon Monoxide Poisoning, Acute, when total CO in person is rising and all senses are dulled to varying degrees up to senseless coma",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-toxic-03",
+          "sourceRow": 147,
+          "displayIndex": "8.3",
+          "name": "Carbon Monoxide Poisoning Chronic, aka Multisensory Sensitivity or MUSES Syndrome, when total CO in person is falling and all the senses are sharpened to varying degrees.  This is not defined in medical dictionaries",
+          "centralSensitization": false,
+          "coPoisoning": true
+        },
+        {
+          "id": "dacss-toxic-04",
+          "sourceRow": 148,
+          "displayIndex": "8.4",
+          "name": "Electromagnetic Hypersensitivity Syndrome",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-toxic-05",
+          "sourceRow": 149,
+          "displayIndex": "8.5",
+          "name": "Gulf War Syndrome",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-toxic-06",
+          "sourceRow": 150,
+          "displayIndex": "8.6",
+          "name": "Mercury Poisoning",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-toxic-07",
+          "sourceRow": 151,
+          "displayIndex": "8.7",
+          "name": "Mold Hypersensitivity Syndrome",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-toxic-08",
+          "sourceRow": 152,
+          "displayIndex": "8.8",
+          "name": "Multiple Chemical Sensitivity by any definition (Donnay offers $100 reward to any adult in the US diagnosed with MCS but none of the other DACSS)",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-toxic-09",
+          "sourceRow": 153,
+          "displayIndex": "8.9",
+          "name": "Organophosphate Pesticide Poisoning",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-toxic-10",
+          "sourceRow": 154,
+          "displayIndex": "8.1",
+          "name": "Solvent Exposure Syndrome, aka Solvent-Induced Encephalopathy",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-toxic-11",
+          "sourceRow": 155,
+          "displayIndex": "8.11",
+          "name": "Stevens‑Johnson Syndrome (drug reaction)",
+          "centralSensitization": false,
+          "coPoisoning": false
+        },
+        {
+          "id": "dacss-toxic-12",
+          "sourceRow": 156,
+          "displayIndex": "8.12",
+          "name": "Toxic Encephalopathy (from specified or unspecified exposures(s))",
+          "centralSensitization": false,
+          "coPoisoning": false
+        }
+      ]
+    }
+  ]
+}
