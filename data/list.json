@@ -700,7 +700,7 @@
           "id": "dacss-toxic-02",
           "sourceRow": 146,
           "displayIndex": "8.2",
-          "name": "Carbon Monoxide Poisoning, Acute, when total CO in person is rising and senses are dulled to varying degrees up to senseless coma.  The acute phase is not defined in medical dictionaries.",
+          "name": "Carbon Monoxide Poisoning, Acute, when total CO in person is rising and senses are dulled to varying degrees up to senseless coma. The acute phase is not defined in medical dictionaries.",
           "centralSensitization": false,
           "coPoisoning": false
         },
