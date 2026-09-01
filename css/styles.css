@@ -102,7 +102,7 @@ input:focus, select:focus, button:focus, summary:focus, [tabindex]:focus {
 .kpis { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
 .kpi {
   background: #f7fafb; border: 1px solid var(--line); border-radius: 8px;
-  padding: 12px 8px; text-align: center;
+  padding: 10px 8px; text-align: center;
 }
 .kpi-num { display: block; font-size: 1.6rem; font-weight: 700; color: var(--accent-d); }
 .kpi-label { display: block; font-size: .78rem; color: var(--ink-soft); margin-top: 2px; }
@@ -118,7 +118,7 @@ input:focus, select:focus, button:focus, summary:focus, [tabindex]:focus {
 /* ---- Checklist ---- */
 .cat { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
        margin: 0 auto 18px; max-width: 940px; overflow: hidden; }
-.cat > h3 { margin: 0; padding: 14px 20px; background: #eef3f6; border-bottom: 1px solid var(--line);
+.cat > h3 { margin: 0; padding: 10px 20px; background: #eef3f6; border-bottom: 1px solid var(--line);
             font-size: 1.05rem; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .cat-count { font-size: .8rem; color: var(--ink-soft); font-weight: 500; }
 
@@ -128,7 +128,7 @@ input:focus, select:focus, button:focus, summary:focus, [tabindex]:focus {
   grid-template-areas: "answers item";
   gap: 12px 18px;
   align-items: center;
-  padding: 12px 20px;
+  padding: 3px 20px;
   border-bottom: 1px solid #eef2f5;
 }
 
