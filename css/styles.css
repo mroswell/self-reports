@@ -123,14 +123,22 @@ input:focus, select:focus, button:focus, summary:focus, [tabindex]:focus {
 .cat-count { font-size: .8rem; color: var(--ink-soft); font-weight: 500; }
 
 .disorder {
-  display: grid; grid-template-columns: 1fr auto; gap: 12px 18px;
-  align-items: center; padding: 12px 20px; border-bottom: 1px solid #eef2f5;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "answers item";
+  gap: 12px 18px;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eef2f5;
 }
-.disorder:last-child { border-bottom: none; }
-.disorder.is-marked { background: #fbfaf5; }
-.disorder .name { margin: 0; }
-.disorder .markers { font-size: .78rem; color: var(--ink-soft); }
 
+.disorder > div:first-child {
+  grid-area: item;
+}
+
+.disorder > .opts {
+  grid-area: answers;
+}
 /* radio group */
 .opts { display: flex; gap: 6px; }
 .opts label {
@@ -180,7 +188,12 @@ input:focus, select:focus, button:focus, summary:focus, [tabindex]:focus {
   .fields { grid-template-columns: 1fr 1fr; }
   .field-narrow { grid-column: span 1; }
   .kpis { grid-template-columns: repeat(3, 1fr); }
-  .disorder { grid-template-columns: 1fr; }
+  .disorder {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "item"
+    "answers";
+}
   .opts { justify-content: flex-start; }
   .dash-table { font-size: .85rem; }
   .dash-table th, .dash-table td { padding: 6px; }
